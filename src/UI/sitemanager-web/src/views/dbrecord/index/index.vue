@@ -27,7 +27,8 @@ export default {
     const model = reactive({ type: '' })
     const cols = [
       { prop: 'id', label: '编号', width: '55', show: false },
-      { prop: 'name', label: 'Username' },
+      { prop: 'dbName', label: 'DbName' },
+      { prop: 'username', label: 'Username' },
       { prop: 'pwd', label: 'Password' },
 	  ...entityBaseCols,
     ]

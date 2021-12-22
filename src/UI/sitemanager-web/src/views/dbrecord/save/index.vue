@@ -2,8 +2,11 @@
   <m-form-dialog :model="model" :rules="rules" v-bind="bind" v-on="on">
     <el-row>
       <el-col :span="24">
-        <el-form-item label="Username：" prop="name">
-          <el-input v-model="model.name" clearable />
+        <el-form-item label="DbName：" prop="dbName">
+          <el-input v-model="model.dbName" clearable />
+        </el-form-item>
+        <el-form-item label="Username：" prop="username">
+          <el-input v-model="model.username" clearable />
         </el-form-item>
         <el-form-item label="Password：" prop="pwd">
           <el-input v-model="model.pwd" clearable />
@@ -23,7 +26,7 @@ export default {
   setup(props, { emit }) {
     const api = mkh.api.sitemanager.dbrecord
 
-    const model = reactive({ name: '', pwd: '' })
+    const model = reactive({ dbName: '', username: '', pwd: '' })
     const rules = {
     }
 

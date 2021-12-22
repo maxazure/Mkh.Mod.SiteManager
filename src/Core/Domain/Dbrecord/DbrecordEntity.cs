@@ -9,16 +9,23 @@ namespace Mkh.Mod.SiteManager.Core.Domain.Dbrecord;
 /// </summary>
 public partial class DbrecordEntity : EntityBase<int>
 {
+
+    /// <summary>
+    /// DbName
+    /// </summary>
+    [Length(255)]
+    public string DbName { get; set; }
+
     /// <summary>
     /// Username
     /// </summary>
     [Length(255)]
-    public string name { get; set; }
+    public string Username { get; set; }
 
     /// <summary>
     /// Password
     /// </summary>
     [Length(255)]
-    public string pwd { get; set; }
+    public string Pwd { get; set; }
 
 }

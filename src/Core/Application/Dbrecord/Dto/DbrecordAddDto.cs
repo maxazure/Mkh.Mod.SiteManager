@@ -9,13 +9,18 @@ namespace Mkh.Mod.SiteManager.Core.Application.Dbrecord.Dto;
 public class DbrecordAddDto
 {
     /// <summary>
-    /// 站点名称
+    /// DbName
     /// </summary>
-    public string name { get; set; }
+    public string DbName { get; set; }
 
     /// <summary>
-    /// 域名
+    /// Username
     /// </summary>
-    public string pwd { get; set; }
+    public string Username { get; set; }
+
+    /// <summary>
+    /// Password
+    /// </summary>
+    public string Pwd { get; set; }
 
 }
