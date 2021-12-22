@@ -1,0 +1,24 @@
+{
+  "name": "sitemanager_dbrecord",
+  "title": "Databases",
+  "icon": "",
+  "path": "/sitemanager/dbrecord",
+  "permissions": ["sitemanager_dbrecord_query_get"],
+  "buttons": {
+    "add": {
+      "text": "添加",
+      "code": "sitemanager_dbrecord_add",
+      "permissions": ["sitemanager_dbrecord_add_post"]
+    },
+    "edit": {
+      "text": "编辑",
+      "code": "sitemanager_dbrecord_edit",
+      "permissions": ["sitemanager_dbrecord_edit_get", "sitemanager_dbrecord_update_post"]
+    },
+    "remove": {
+      "text": "删除",
+      "code": "sitemanager_dbrecord_delete",
+      "permissions": ["sitemanager_dbrecord_delete_delete"]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Mkh.Auth.Abstractions" Version="1.0.9" />
+		<PackageReference Include="Mkh.Module.Web" Version="1.0.9" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.2.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Core\Core.csproj" />
+	</ItemGroup>
+
+	<Import Project="..\..\build\module.build.targets" />
+
+</Project>

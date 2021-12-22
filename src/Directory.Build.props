@@ -1,0 +1,27 @@
+﻿<Project>
+	<PropertyGroup>
+		<Id>6240</Id>
+		<Code>SiteManager</Code>
+		<Name>站点管理</Name>
+		<Authors>17MKH</Authors>
+		<Icon>programming</Icon>
+		<Version>1.0.0</Version>
+		<Description>17MKH Module $(Code)($(Name)) - $(MSBuildProjectName)</Description>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+		<LangVersion>Latest</LangVersion>
+		<!--禁用隐式命名空间导入，防止与自定义文件冲突-->
+		<DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
+		<RootNamespacePrefix>Mkh.Mod</RootNamespacePrefix>
+		<AssemblyName>$(RootNamespacePrefix).$(Code).$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>$(AssemblyName)</RootNamespace>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<RunAnalyzersDuringLiveAnalysis>false</RunAnalyzersDuringLiveAnalysis>
+		<!--设置打包路径-->
+		<PackageOutputPath>$(SolutionDir)\_packages</PackageOutputPath>
+		<Company>17MKH</Company>
+		<Copyright>17MKH</Copyright>
+		<PackageProjectUrl></PackageProjectUrl>
+		<RepositoryUrl></RepositoryUrl>
+	</PropertyGroup>
+</Project>

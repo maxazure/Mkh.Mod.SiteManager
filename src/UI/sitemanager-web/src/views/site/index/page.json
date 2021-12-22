@@ -1,0 +1,24 @@
+{
+  "name": "sitemanager_site",
+  "title": "站点",
+  "icon": "icon",
+  "path": "/sitemanager/site",
+  "permissions": ["sitemanager_site_query_get"],
+  "buttons": {
+    "add": {
+      "text": "添加",
+      "code": "sitemanager_site_add",
+      "permissions": ["sitemanager_site_add_post"]
+    },
+    "edit": {
+      "text": "编辑",
+      "code": "sitemanager_site_edit",
+      "permissions": ["sitemanager_site_edit_get", "sitemanager_site_update_post"]
+    },
+    "remove": {
+      "text": "删除",
+      "code": "sitemanager_site_delete",
+      "permissions": ["sitemanager_site_delete_delete"]
+    }
+  }
+}

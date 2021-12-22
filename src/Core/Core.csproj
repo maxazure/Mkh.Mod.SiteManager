@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Mkh.Data.Core" Version="1.0.9" />
+		<PackageReference Include="Mkh.Module.Abstractions" Version="1.0.9" />
+	</ItemGroup>
+
+</Project>
