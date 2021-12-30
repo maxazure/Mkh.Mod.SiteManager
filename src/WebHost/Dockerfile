@@ -2,7 +2,7 @@
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
-EXPOSE 80
+EXPOSE 6240
 
 # ´ò°üÇ°¶Ë
 FROM node:16 AS ui
